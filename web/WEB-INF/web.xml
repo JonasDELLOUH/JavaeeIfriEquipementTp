@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  
+  <servlet>
+    <servlet-name>Connection</servlet-name>
+    <servlet-class>com.ifri.servlets.Connection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connection</servlet-name>
+    <url-pattern>/Connection</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>com.ifri.servlets.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/Accueil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Achat</servlet-name>
+    <servlet-class>com.ifri.servlets.Achat</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Achat</servlet-name>
+    <url-pattern>/Achat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Livraison</servlet-name>
+    <servlet-class>com.ifri.servlets.Livraison</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Livraison</servlet-name>
+    <url-pattern>/Livraison</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EntiteEquipement</servlet-name>
+    <servlet-class>com.ifri.servlets.EntiteEquipement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EntiteEquipement</servlet-name>
+    <url-pattern>/EntiteEquipement</url-pattern>
+  </servlet-mapping>
+  
+  
+  <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>taglibs.jsp</include-prelude>
+        </jsp-property-group>
+   </jsp-config>
+</web-app>
